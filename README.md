@@ -1,0 +1,2 @@
+- ActiveRecord plugin: https://github.com/jpfuentes2/php-activerecords
+- Route Controller plugin: https://github.com/skipperbent/simple-php-router#other-examples
