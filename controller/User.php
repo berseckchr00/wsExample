@@ -7,24 +7,12 @@
  * Time: 15:25
  */
 require_once __DIR__ . '/../model/Users.php';
+require_once __DIR__ . '/Controller.php';
 
 class User extends Controller
 {
 
-    /**
-     * User constructor.
-     */
-    public function __construct()
-    {
-
-    }
-
     public function index(){
-
-        /*$user = Users::find(5);//find by id element?
-        $user->email .= ";diego.gonzalez@grupogtd.com";
-        $user->save();//update field
-        $user= Users::find(5);*/
 
         $user = new Users();
         $user->id = null;
