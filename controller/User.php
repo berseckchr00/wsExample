@@ -8,7 +8,7 @@
  */
 require_once __DIR__ . '/../model/Users.php';
 
-class User
+class User extends Controller
 {
 
     /**
@@ -16,17 +16,7 @@ class User
      */
     public function __construct()
     {
-        ActiveRecord\Config::initialize(function($cfg)
-        {
-            $cfg->set_model_directory('.');
-            $cfg->set_connections(
-                array(
-                    'development' => 'mysql://root:root@localhost/test',
-                    'test' => 'mysql://root:root@localhost/test',
-                    'production' => 'mysql://root:root@localhost/test',
-                )
-            );
-        });
+
     }
 
     public function index(){
